@@ -1,0 +1,78 @@
+body{
+    /* background-image: url(../img/bg-utama.jpg); */
+    background-color: rgb(243, 243, 243);
+    background-size: cover;
+    font-family: Times New Roman;
+}
+.box{
+    margin-top: 5%;
+    margin-left:20% ;
+    margin-right: 20%;
+    /* background: rgba(78, 72, 72, 0.658); */
+    background-color: rgba(0, 255, 200, 0.329);
+    padding: 50px 80px;
+    border-radius: 30px;
+}
+.hd{
+    /* border-bottom: 3px double #fff; */
+    border-bottom: 3px double rgba(255, 217, 0, 0.726);
+}
+.box h1{
+    text-align: center;
+    /* color: rgba(255, 217, 0, 0.726); */
+    color: rgb(37, 37, 182);
+    font-family: Imprint MT Shadow;
+}
+.box h1 img{
+    width: 50px;
+}
+.box h2{
+    /* color: #fff; */
+    color: rgb(136, 37, 182);
+    margin: 0 0 30px;
+    text-align: center;
+}
+.box .inputbox{
+    position: relative;
+    margin-top: 20px;
+}
+.box .inputbox input{
+    width: 100%;
+    padding: 10px 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #343A40;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid rgba(255, 217, 0, 0.726);
+}
+.box .inputbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 8px;
+    font-size: 16px;
+    color: rgb(1, 36, 1);
+    pointer-events: none;
+    transition: all .5s;
+}
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label{
+    top: -28px;
+    font-size: 14px;
+    color: #343A40;
+    border: none;
+}
+
+@media (max-width: 567px){
+    .box h1{
+        font-size: 20px;
+    }
+    .box h1 img{
+        width: 18px;
+    }
+    .btn{
+        width: 100%;
+    }
+}

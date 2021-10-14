@@ -1,0 +1,457 @@
+/* Sidebar */
+.sidebar {
+	display: none;
+	/* background-color: rgba(255, 217, 0, 0.726); */
+	background-color: rgb(235, 255, 239);
+}
+
+.sidebar img {
+	width: 280px;
+	height: 180px;
+}
+
+.sidebar .main-menu {
+	margin-top: 30px;
+	font-family: Imprint MT Shadow;
+	font-size: 20px;
+	list-style: none;
+}
+
+.sidebar .main-menu .menu {
+	border: 4px solid rgba(255, 217, 0, 0.726);
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgba(255, 217, 0, 0.5);
+}
+
+.sidebar .main-menu .menu h4 {
+	padding-top: 8px;
+	color: rgb(65, 61, 255);
+}
+
+
+.sidebar .main-menu li a {
+	color: black;
+	text-decoration: none;
+}
+
+/* Akhir sidebar */
+
+
+
+/* Sisi kanan */
+
+/* navbar */
+.sisi_kanan .navbar {
+	/* background-color: rgba(255, 217, 0, 0.726); */
+	background-color: rgb(235, 255, 239);
+}
+
+.sisi_kanan .nav-item {
+	font-family: Harington;
+}
+
+.sisi_kanan .toggle {
+	display: block;
+}
+
+.sisi_kanan button {
+	background-color: rgba(255, 255, 255, 0.26)
+}
+
+.sisi_kanan button img {
+	width: 40px;
+}
+
+.aktif {
+	display: block;
+}
+
+/* Akhir navbar */
+
+/* UNtuk Halaman Home */
+/* Jumbotron */
+.jumbotron {
+	background-image: url('../img/mesinjahit.png');
+	background-size: cover;
+	position: relative;
+}
+
+.jumbotron::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, rgba(71, 71, 71, 0.8), rgba(0, 0, 0, 0));
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron .display-4 {
+	font-family: Harrington;
+	color: aqua;
+	text-shadow: 3px 2px 0.1px rgba(0, 0, 0, 0.6);
+	text-align: center;
+	font-weight: 200;
+}
+
+.jumbotron .display-4 span {
+	font-weight: 700;
+	color: rgba(255, 217, 0, 0.726);
+}
+
+/* Akhir halaman home */
+
+/* Halaman laki-laki */
+.col .judul {
+	font-family: Harrington;
+	font-weight: bolder;
+}
+
+.bd-example img {
+	height: 200px;
+}
+
+.bd-example h5,
+.bd-example p {
+	color: rgb(255, 217, 0);
+	font-weight: bold;
+}
+
+/* Akhir sisi kanan */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Versi Desktop */
+@media (min-width: 992px) {
+
+	/* Sidebar */
+	.sidebar {
+		display: block;
+		position: fixed;
+		width: 350px;
+		height: 100%;
+		border-right: black double 5px;
+	}
+
+	.sidebar .main-menu {
+		list-style: none;
+		margin-top: 30px;
+		margin-left: -80px;
+	}
+
+	.sidebar .main-menu .menu {
+		margin-left: 25px;
+	}
+
+	.sidebar .main-menu li a {
+		display: inline-block;
+		font-size: 25px;
+		padding-left: 70px;
+		margin-top: 20px;
+		position: relative;
+	}
+
+	.sidebar .main-menu li.active a {
+		border-bottom: 2px solid rgba(255, 217, 0, 0.726);
+	}
+
+	/* Akhir sidebar */
+
+
+	/* Sisi Kanan */
+
+	.sisi_kanan {
+		margin-left: 350px;
+		height: 100%;
+	}
+
+	/* Navbar */
+	.sisi_kanan .nav-link {
+		text-transform: uppercase;
+		color: black !important;
+	}
+
+	.sisi_kanan .toggle {
+		display: none;
+	}
+
+	/* Akhir navbar */
+
+	/* Untuk Halaman Home */
+	.jumbotron {
+		height: 600px;
+	}
+
+	.jumbotron .display-4 {
+		margin-top: 150px;
+		font-size: 80px;
+	}
+
+
+	.info-panel {
+		width: 100%;
+		height: auto;
+		text-align: center;
+		margin-top: -30px;
+	}
+
+	.info-panel hr {
+		border-width: 5px;
+		border-color: aqua;
+	}
+
+	.info-panel h2 {
+		margin-top: 50px;
+		font-family: Harrington;
+	}
+
+	.info-panel .col-panel {
+		box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+		background-color: white;
+		font-family: Imprint MT Shadow;
+		margin: 20px auto;
+		border-radius: 20px;
+		padding: 20px;
+	}
+
+	.info-panel h2.h-panel {
+		padding-top: 25px;
+	}
+
+	.info-panel h1,
+	.info-panel .h4-panel {
+		font-family: Imprint MT Shadow;
+		padding: 20px;
+	}
+
+	.info-panel h1 span {
+		font-weight: bold;
+		color: rgba(255, 217, 0, 0.726);
+	}
+
+	.info-panel .text-right {
+		font-family: Imprint MT Shadow;
+		padding-bottom: 80px;
+		padding-right: 40px;
+	}
+
+	.info-panel .join {
+		font-family: Georgia;
+		margin: 40px;
+	}
+
+	.komen {
+		padding-bottom: 25px;
+	}
+
+	.komentar {
+		background: linear-gradient(40deg, rgba(255, 0, 0, 0.5), rgba(255, 166, 0, 0.5), rgba(255, 255, 0, 0.5), rgba(0, 128, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(128, 0, 128, 0.5));
+		border-radius: 20px;
+	}
+
+	.komentar h3 {
+		font-family: Imprint MT Shadow;
+		font-weight: 200;
+		padding-top: 15px;
+		color: rgb(65, 61, 255);
+	}
+
+	.komentar .name {
+		color: white;
+		font-family: Harrington;
+		font-size: 30px;
+	}
+
+	.komentar .isi-komentar {
+		font-family: Imprint MT Shadow;
+		font-size: 20px;
+		padding-bottom: 30px;
+	}
+
+	/* Akhir Untuk Halaman Home */
+
+
+	/* Untuk Halaman koleksi */
+	.col .judul {
+		font-size: 30px;
+	}
+
+	.col hr {
+		border-width: 5px;
+		border-color: aqua;
+	}
+
+	.bd-example img {
+		height: 480px;
+	}
+
+	.row .ortu {
+		position: relative;
+	}
+
+	.row .ortu .sewa img {
+		position: absolute;
+		z-index: 11;
+		top: 6px;
+		right: 1px;
+	}
+
+	.row .card {
+		margin-top: 20px;
+		font-family: Imprint MP Shadow;
+	}
+
+	.row .card .modal-body img {
+		width: 100%;
+		height: 450px;
+	}
+
+	.filter {
+		background-color: aqua;
+		text-align: center;
+		font-family: Imprint MP Shadow;
+		margin-left: 550px;
+		margin-top: -16px;
+		padding-bottom: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+
+	.filter .loading {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+
+	.filter h4 {
+		padding-top: 30px;
+	}
+
+	.filter p {
+		padding-top: 5px;
+	}
+
+	/* Akhir Untuk Halaman koleksi */
+
+	/* Untuk Halaman perempuan */
+	/* Akhir Untuk Halaman perempuan */
+
+	/* Untuk Halaman pakaian sewa */
+	/* Akhir Untuk Halaman pakaian sewa */
+
+
+
+	/* Akhir sisi kanan */
+
+
+
+
+
+
+	/* Admin */
+	/* Admin */
+	/* Admin */
+	/* Admin */
+	/* dashborad */
+	.dashboard h4 {
+		margin-top: 20px;
+		margin-bottom: 5px;
+		font-family: harrington;
+		font-size: 30px;
+	}
+
+	.row .col-admin {
+		width: 100%;
+		height: 100px;
+		background-color: rgb(4, 134, 255);
+		margin-top: 20px;
+		color: white;
+		font-family: Imprint MT Shadow;
+	}
+
+	.row .col-admin p {
+		font-size: 30px;
+		margin-top: 5px;
+		margin-left: 35px;
+		text-align: center;
+	}
+
+	.row .col-admin span {
+		font-size: 65px;
+		font-weight: 500;
+	}
+
+	/* daftar */
+	.daftar h4 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-family: harrington;
+		font-size: 30px;
+	}
+
+	.daftar table {
+		font-family: monospace;
+	}
+
+	.info-admin hr {
+		border-width: 5px;
+		border-color: aqua;
+	}
+
+	/* Akhir admin */
+
+
+
+
+	/* Footer */
+	.footer {
+		text-align: center;
+		font-family: Harrington;
+	}
+
+	.footer h3 {
+		color: aqua;
+	}
+
+	.footer hr {
+		border-style: dashed;
+		border-width: 4px;
+	}
+
+	.footer p {
+		color: white;
+	}
+}
